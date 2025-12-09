@@ -1,167 +1,201 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!doctype html>
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>Aquario's Restaurante & Bar - Fronteira MG</title>
-  <meta name="description" content="Aquario's Restaurante & Bar em Fronteira - MG. Pratos, porções, bebidas e ambiente aconchegante.">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Senna Reformadora de Pneus — Dados Cadastrais</title>
+  <meta name="description" content="Senna Reformadora de Pneus LTDA — Dados cadastrais, contatos e políticas."/>
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+
   <style>
-    body { font-family: Arial, sans-serif; margin:0; background:#f2f2f2; color:#333; }
-    header { background:#111; color:#fff; padding:25px 10px; text-align:center; }
+    /* Reset leve */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html,body { height: 100%; font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; color:#222; background:#f5f7fb; }
+    a { color: inherit; text-decoration: none; }
 
-    nav {
-      background:#222;
-      display:flex;
-      justify-content:center;
-      flex-wrap:wrap;
-      padding:10px;
+    /* Layout */
+    .container { max-width: 1100px; margin: 28px auto; padding: 20px; }
+    header { background: linear-gradient(90deg,#0b74d1,#0b9ae0); color: #fff; padding: 22px; border-radius: 12px; box-shadow: 0 6px 18px rgba(11,122,209,0.14); display:flex; gap:18px; align-items:center; justify-content:space-between; flex-wrap:wrap; }
+    .brand { display:flex; gap:14px; align-items:center; }
+    .logo { width:64px; height:64px; border-radius:10px; background:rgba(255,255,255,0.12); display:flex; align-items:center; justify-content:center; font-weight:700; font-size:22px; }
+    h1 { font-size:20px; letter-spacing:0.2px; }
+    .nav { display:flex; gap:10px; align-items:center; }
+    .nav a { background: rgba(255,255,255,0.12); color:#fff; padding:8px 12px; border-radius:8px; font-size:14px; }
+    .cta { background:#fff; color:#0b74d1; padding:10px 14px; border-radius:10px; font-weight:600; box-shadow: 0 4px 10px rgba(11,122,209,0.12); }
+
+    /* Grid */
+    .grid { display:grid; grid-template-columns: 1fr 360px; gap:18px; margin-top:18px; }
+    .card { background:#fff; padding:18px; border-radius:12px; box-shadow: 0 6px 20px rgba(18,25,30,0.04); }
+    .muted { color:#6b7280; font-size:13px; }
+
+    table.info { width:100%; border-collapse:collapse; margin-top:12px; }
+    table.info td { padding:8px 6px; vertical-align:top; border-top:1px solid #f1f3f6; }
+    table.info td.label { width:210px; color:#374151; font-weight:600; }
+
+    .contact-list { display:flex; flex-direction:column; gap:10px; margin-top:10px; }
+    .contact-item { display:flex; gap:10px; align-items:center; }
+    .chip { background:#f3f6fb; padding:8px 10px; border-radius:8px; font-weight:600; font-size:13px; }
+
+    footer { margin-top:20px; text-align:center; color:#6b7280; font-size:13px; }
+
+    /* Small screens */
+    @media (max-width:900px){
+      .grid { grid-template-columns: 1fr; }
+      .nav { width:100%; justify-content:flex-end; }
     }
 
-    nav a {
-      color:#fff;
-      text-decoration:none;
-      margin:5px 15px;
-      font-weight:bold;
-      font-size:15px;
-    }
+    /* Policy & terms collapsible */
+    details { margin-top:12px; border-radius:8px; padding:12px; background:#fbfdff; }
+    details summary { cursor:pointer; font-weight:700; }
+    .policy p { margin-top:10px; line-height:1.45; color:#374151; font-size:14px; }
+    .meta { display:flex; gap:12px; flex-wrap:wrap; margin-top:8px; color:#4b5563; font-size:13px; }
 
-    nav a:hover {
-      text-decoration:underline;
-    }
-
-    section {
-      padding: 20px;
-      max-width:900px;
-      margin:10px auto;
-      background:#fff;
-      border-radius:12px;
-      box-shadow:0 0 10px rgba(0,0,0,0.05);
-    }
-
-    h2 { border-bottom:2px solid #ddd; padding-bottom:5px; }
-
-    .menu-item { margin-bottom:10px; }
-
-    .avaliacao {
-      border-bottom:1px solid #eee;
-      padding:12px 0;
-    }
-
-    .btn {
-      display:inline-block;
-      background:#25d366;
-      color:#fff;
-      padding:12px 22px;
-      text-decoration:none;
-      border-radius:8px;
-      font-weight:bold;
-      margin-top:10px;
-    }
-
-    footer {
-      background:#111;
-      color:#fff;
-      text-align:center;
-      padding:15px;
-      margin-top:20px;
-      font-size:14px;
-    }
+    /* Small helper */
+    .small-muted { color:#6b7280; font-size:13px; }
+    .map-link { display:inline-block; margin-top:8px; }
   </style>
+
+  <!-- Structured data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Senna Reformadora de Pneus",
+    "legalName": "Senna Reformadora de Pneus LTDA",
+    "email": "se****@****.com",
+    "telephone": "(33) 998****-****",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Rua Tiago Machado Garcia, 562",
+      "addressLocality": "Ipatinga",
+      "addressRegion": "MG",
+      "postalCode": "35164-390",
+      "addressCountry": "BR"
+    },
+    "foundingDate": "2023-03-01",
+    "vatID": "49.760.936/0001-00"
+  }
+  </script>
 </head>
 <body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo" aria-hidden="true">SR</div>
+        <div>
+          <h1>Senna Reformadora de Pneus</h1>
+          <div class="small-muted">Razão Social: Senna Reformadora de Pneus LTDA — CNPJ: 49.760.936/0001-00</div>
+        </div>
+      </div>
 
-<header>
-  <h1>Aquario's Restaurante & Bar</h1>
-  <p>Tradição em sabor — Fronteira, MG</p>
-</header>
+      <nav class="nav" aria-label="Navegação principal">
+        <a href="#dados">Dados Cadastrais</a>
+        <a href="#contato">Contato</a>
+        <a href="#localizacao">Localização</a>
+        <a href="#politica">Política de Privacidade</a>
+        <a class="cta" href="#termos">Termos</a>
+      </nav>
+    </header>
 
-<nav>
-  <a href="#quem-somos">Quem Somos</a>
-  <a href="#cardapio">Cardápio</a>
-  <a href="#avaliacoes">Avaliações</a>
-  <a href="#contato">Contato</a>
-  <a href="#privacidade">Política de Privacidade</a>
-  <a href="#termos">Termos de Uso</a>
-</nav>
+    <main class="grid" role="main">
+      <!-- Left column -->
+      <section class="card" id="dados" aria-labelledby="dadosTitle">
+        <h2 id="dadosTitle">Informações de Registro</h2>
+        <div class="muted">Dados oficiais e situação cadastral.</div>
 
-<section id="quem-somos">
-  <h2>Quem Somos</h2>
-  <p>
-    O Aquario's Restaurante & Bar é uma empresa familiar criada com o objetivo de oferecer alimentação de qualidade, atendimento humanizado e um ambiente agradável para moradores e visitantes de Fronteira – MG e região.
-  </p>
-  <p>
-    Trabalhamos com ingredientes selecionados e receitas preparadas com cuidado, preservando o sabor caseiro e a tradição da boa comida. Nosso espaço é ideal para famílias, casais, grupos de amigos e viajantes que buscam uma refeição bem servida.
-  </p>
-  <p>
-    Nosso compromisso é com a qualidade, limpeza, organização e respeito a cada cliente que escolhe o Aquario's para seus momentos de refeição e lazer.
-  </p>
-</section>
+        <table class="info" aria-describedby="dadosTitle">
+          <tr>
+            <td class="label">CNPJ</td>
+            <td>49.760.936/0001-00 — <span class="small-muted">49760936000100</span></td>
+          </tr>
+          <tr>
+            <td class="label">Inscrição Estadual (MG)</td>
+            <td>004558901.00-12</td>
+          </tr>
+          <tr>
+            <td class="label">Razão Social</td>
+            <td>Senna Reformadora de Pneus LTDA</td>
+          </tr>
+          <tr>
+            <td class="label">Nome Fantasia</td>
+            <td>Senna Reformadora de Pneus</td>
+          </tr>
+          <tr>
+            <td class="label">Data de Abertura</td>
+            <td>01/03/2023 — <span class="small-muted">2 anos, 9 meses e 8 dias*</span></td>
+          </tr>
+          <tr>
+            <td class="label">Porte</td>
+            <td>Micro Empresa</td>
+          </tr>
+          <tr>
+            <td class="label">Natureza Jurídica</td>
+            <td>Sociedade Empresária Limitada</td>
+          </tr>
+          <tr>
+            <td class="label">Opção MEI</td>
+            <td>Não</td>
+          </tr>
+          <tr>
+            <td class="label">Opção Simples</td>
+            <td>Sim — desde 01/03/2023</td>
+          </tr>
+          <tr>
+            <td class="label">Capital Social</td>
+            <td>R$ 60.000,00</td>
+          </tr>
+          <tr>
+            <td class="label">Tipo</td>
+            <td>Matriz</td>
+          </tr>
+          <tr>
+            <td class="label">Situação</td>
+            <td>Ativa — Data situação cadastral: 01/03/2023</td>
+          </tr>
+        </table>
 
-<section id="cardapio">
-  <h2>Cardápio</h2>
-  <div class="menu-item">🍛 Pratos executivos completos</div>
-  <div class="menu-item">🍖 Porções variadas</div>
-  <div class="menu-item">🍗 Frango a passarinho</div>
-  <div class="menu-item">🥩 Contra-filé acebolado</div>
-  <div class="menu-item">🍺 Cervejas geladas</div>
-  <div class="menu-item">🥤 Refrigerantes, sucos e água</div>
+        <details id="termos">
+          <summary>Termos e Condições (resumo)</summary>
+          <div class="policy">
+            <p>Este site apresenta informações institucionais e de contato da Senna Reformadora de Pneus LTDA. O conteúdo aqui disponibilizado tem finalidade informativa. A reprodução de informações institucionais é permitida desde que citada a fonte.</p>
+            <p>Para solicitações formais (documentos fiscais, certidões ou contratos) entre em contato pelo e-mail ou telefone listados na página.</p>
+          </div>
+        </details>
+      </section>
 
-  <a class="btn" href="https://wa.me/55SEU_NUMERO_AQUI">Pedir pelo WhatsApp</a>
-</section>
+      <!-- Right column -->
+      <aside>
+        <div class="card" id="contato" aria-labelledby="contatoTitle">
+          <h3 id="contatoTitle">Contatos</h3>
+          <div class="muted">Formas de contato e localização rápida.</div>
 
-<section id="avaliacoes">
-  <h2>Avaliações dos Clientes</h2>
+          <div class="contact-list">
+            <div class="contact-item">
+              <div class="chip">E-mail</div>
+              <div>
+                <div><strong>se****@****.com</strong></div>
+                <div class="small-muted">(e-mail protegido)</div>
+              </div>
+            </div>
 
-  <div class="avaliacao">
-    ⭐⭐⭐⭐⭐ <strong>Maria Aparecida</strong><br>
-    “Comida maravilhosa, atendimento excelente e ambiente muito agradável.”
-  </div>
+            <div class="contact-item">
+              <div class="chip">Telefone</div>
+              <div>
+                <div><strong>(33) 998****-****</strong></div>
+                <div class="small-muted">(telefone protegido)</div>
+              </div>
+            </div>
 
-  <div class="avaliacao">
-    ⭐⭐⭐⭐⭐ <strong>João Pedro</strong><br>
-    “Sempre paro aqui quando passo pela região. Comida muito bem servida.”
-  </div>
+            <div class="contact-item">
+              <div class="chip">Local</div>
+              <div>
+                <div><strong>Rua Tiago Machado Garcia, 562</strong></div>
+                <div class="small-muted">Bairro: Residencial Ayrton Senna — Ipatinga / MG — CEP 35164-390</div>
+                <a class="map-link small-muted" href="https://www.google.com/maps/search/?api=1&query=Rua+Tiago+Machado+Garcia,+562+Ipatinga+MG" target="_blank" rel="noopener">Ver no mapa</a>
+              </div>
+            </div>
 
-  <div class="avaliacao">
-    ⭐⭐⭐⭐⭐ <strong>Fernanda Souza</strong><br>
-    “Lugar limpo, organizado e atendimento rápido. Recomendo!”
-  </div>
-
-  <div class="avaliacao">
-    ⭐⭐⭐⭐⭐ <strong>Carlos Henrique</strong><br>
-    “Ótimo custo-benefício, comida saborosa e cerveja bem gelada.”
-  </div>
-
-  <div class="avaliacao">
-    ⭐⭐⭐⭐⭐ <strong>Ana Paula</strong><br>
-    “Ambiente familiar e excelente atendimento. Voltarei mais vezes!”
-  </div>
-</section>
-
-<section id="contato">
-  <h2>Contato</h2>
-  <p>📍 Rodovia BR-153, Km 231, Bairro Náutico Clube Fronteira, Fronteira - MG</p>
-  <p>📞 Telefone: (34) 342X-XXXX</p>
-  <p>📧 E-mail: es****@****.com</p>
-</section>
-
-<section id="privacidade">
-  <h2>Política de Privacidade</h2>
-  <p>
-    Respeitamos a privacidade dos nossos visitantes e clientes. As informações fornecidas em nosso site são utilizadas apenas para atendimento e comunicação, não sendo compartilhadas com terceiros.
-  </p>
-</section>
-
-<section id="termos">
-  <h2>Termos de Uso</h2>
-  <p>
-    Ao acessar este site, o usuário concorda com as informações aqui disponibilizadas e se compromete a utilizá-lo de forma ética e responsável.
-  </p>
-</section>
-
-<footer>
-  <p>© Aquario's Restaurante & Bar - Todos os direitos reservados</p>
-</footer>
-
-</body>
-</html>
+            <div style="margin-top:6px;">
+              <a class="cta" href="mailto:se****@****.com" aria-label="Enviar e-mail">Enviar e-mail</a>
+            </div>
+          </div>
